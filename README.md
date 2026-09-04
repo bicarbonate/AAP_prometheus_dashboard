@@ -1,0 +1,1 @@
+Dashboard I created in Grafana for AAP 2.6 containerized. AAP is hosted from EC2s, and utilizes an RDS instance for all the databases as well as Cloudwatch log groups as data sources. The Prometheus exporter is AWS hosted/managed.
