@@ -1,0 +1,2603 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "limit": 100,
+        "name": "Annotations & Alerts",
+        "showIn": 0,
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      },
+      {
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "filter": {
+          "exclude": false,
+          "ids": [
+            36
+          ]
+        },
+        "hide": true,
+        "iconColor": "background6",
+        "name": "Time region for panel Job Execution",
+        "target": {
+          "queryType": "timeRegions",
+          "refId": "Anno",
+          "timeRegion": {
+            "timezone": "utc"
+          }
+        }
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 48,
+      "panels": [],
+      "title": "Main",
+      "type": "row"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 0,
+        "y": 1
+      },
+      "id": 45,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<img src=\"data:image/webp;base64,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\" width=\"400\" height=\"200\">",
+        "mode": "html"
+      },
+      "pluginVersion": "12.4.3",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 5,
+        "y": 1
+      },
+      "id": 47,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "expr": "clamp_min(\n  max_over_time(awx_status_total{status=\"failed\"}[$__range])\n  - min_over_time(awx_status_total{status=\"failed\"}[$__range]), 0)",
+          "instant": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Failed Templates",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 9,
+        "y": 1
+      },
+      "id": 46,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "expr": "clamp_min(\n  max_over_time(awx_status_total{status=\"successful\"}[$__range])\n  - min_over_time(awx_status_total{status=\"successful\"}[$__range]), 0)",
+          "instant": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Successful Templates",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 7
+      },
+      "id": 22,
+      "panels": [],
+      "title": "License and Configuration",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^tower_version$/",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_system_info{tower_version=\"4.7.13\"}",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "{{label_name}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Version",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "rgb(255, 255, 255)",
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "external_logger_enabled"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "False": {
+                        "color": "blue",
+                        "index": 1
+                      },
+                      "True": {
+                        "color": "green",
+                        "index": 0
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 3,
+        "y": 8
+      },
+      "id": 15,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^external_logger_enabled$/",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_system_info{external_logger_enabled=\"False\"}",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "__auto",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "External Logger",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          },
+          "unit": "dtdurations"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 5,
+        "x": 6,
+        "y": 8
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^license_expiry$/",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_system_info",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "{{label_name}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "License Expiry",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 5,
+        "x": 11,
+        "y": 8
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "expr": "awx_hosts_total",
+          "instant": false,
+          "legendFormat": "{{type}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Hosts - Active | Total",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 0,
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 20
+              },
+              {
+                "color": "#EAB839",
+                "value": 40
+              },
+              {
+                "color": "green",
+                "value": 90
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 3,
+        "x": 16,
+        "y": 8
+      },
+      "id": 10,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_license_instance_free",
+          "instant": true,
+          "legendFormat": "{{label_name}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Hosts Available",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 0,
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 10
+              },
+              {
+                "color": "#EAB839",
+                "value": 20
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 3,
+        "x": 19,
+        "y": 8
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "awx_license_instance_free / awx_license_instance_total * 100",
+          "format": "heatmap",
+          "instant": false,
+          "legendFormat": "{{label_name}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Host License % Remaining",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": ""
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 11
+      },
+      "id": 17,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "count(awx_instance_info)",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "__auto",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Controller Instances",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "rgb(255, 255, 255)",
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "insights_analytics"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "False": {
+                        "color": "blue",
+                        "index": 1
+                      },
+                      "True": {
+                        "color": "green",
+                        "index": 0
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 3,
+        "y": 11
+      },
+      "id": 12,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^insights_analytics$/",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "awx_system_info{job=~\"$service\",pod=~\"$pod\"}",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "title": "Insights ",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 5,
+        "x": 6,
+        "y": 11
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^license_type$/",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_system_info{license_type=\"enterprise\"}",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "{{label_name}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "License Type",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 14
+      },
+      "id": 24,
+      "panels": [],
+      "title": "Inventory",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_inventories_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Inventories"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_projects_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Projects"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_job_templates_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Job Templates"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_workflow_job_templates_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Workflows"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_hosts_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Active Hosts"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "awx_schedules_total"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Schedules"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 15
+      },
+      "id": 30,
+      "options": {
+        "alertThreshold": false,
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 16,
+        "minVizWidth": 8,
+        "namePlacement": "auto",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "sizing": "auto",
+        "valueMode": "color"
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_inventories_total",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "grafana-amazonprometheus-datasource",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_projects_total",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "grafana-amazonprometheus-datasource",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_job_templates_total",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "grafana-amazonprometheus-datasource",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_workflow_job_templates_total",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "grafana-amazonprometheus-datasource",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_hosts_total{type=\"active\"}",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "E"
+        },
+        {
+          "datasource": {
+            "type": "grafana-amazonprometheus-datasource",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "awx_schedules_total",
+          "instant": true,
+          "legendFormat": "{{__name__}}",
+          "range": false,
+          "refId": "F"
+        }
+      ],
+      "title": "Resources",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "cloudwatch",
+        "uid": "cftekmikkd8g0e"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "max": 100,
+          "min": 1,
+          "noValue": "0",
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "blue",
+                "value": 0
+              },
+              {
+                "color": "green",
+                "value": 25
+              },
+              {
+                "color": "#EAB839",
+                "value": 50
+              },
+              {
+                "color": "orange",
+                "value": 75
+              },
+              {
+                "color": "red",
+                "value": 90
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Network In 1"
+            },
+            "properties": [
+              {
+                "id": "max",
+                "value": 2000000
+              },
+              {
+                "id": "min",
+                "value": 50000
+              },
+              {
+                "id": "unit",
+                "value": "Bps"
+              },
+              {
+                "id": "displayName",
+                "value": "Network In"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Network Out 1"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "Bps"
+              },
+              {
+                "id": "min",
+                "value": 50000
+              },
+              {
+                "id": "max",
+                "value": 2000000
+              },
+              {
+                "id": "displayName",
+                "value": "Network Out"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Network In 2"
+            },
+            "properties": [
+              {
+                "id": "min",
+                "value": 50000
+              },
+              {
+                "id": "max",
+                "value": 2000000
+              },
+              {
+                "id": "unit",
+                "value": "Bps"
+              },
+              {
+                "id": "displayName",
+                "value": "Network In"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Controller 2 - CPU"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percent"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Controller 1 - CPU"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percent"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Network Out 2"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "Bps"
+              },
+              {
+                "id": "min",
+                "value": 50000
+              },
+              {
+                "id": "max",
+                "value": 2000000
+              },
+              {
+                "id": "displayName",
+                "value": "Network Out"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 15
+      },
+      "id": 20,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "",
+          "id": "",
+          "label": "Controller 1 - CPU",
+          "logGroups": [],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "CPUUtilization",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "A",
+          "region": "us-east-2",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "SUM()",
+          "id": "",
+          "label": "Network In 1",
+          "logGroups": [],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "NetworkIn",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "B",
+          "region": "us-east-2",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "",
+          "id": "",
+          "label": "Network Out 1",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "NetworkOut",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "C",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "",
+          "id": "",
+          "label": "Controller 2 - CPU",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "CPUUtilization",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "D",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "",
+          "id": "",
+          "label": "Network In 2",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "NetworkIn",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "E",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "InstanceId": "EC2_INSTANCE_ID"
+          },
+          "expression": "",
+          "id": "",
+          "label": "Network Out 2",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "NetworkOut",
+          "metricQueryType": 0,
+          "namespace": "AWS/EC2",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "F",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        }
+      ],
+      "title": "Controller Resources ",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 22
+      },
+      "id": 32,
+      "panels": [],
+      "title": "Job Statistics",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 30,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "stepAfter",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 23
+      },
+      "id": 34,
+      "options": {
+        "alertThreshold": false,
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum by (launch_type) (awx_instance_launch_type_total{launch_type!~\"dependency\"})",
+          "instant": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Job Launched Statistics",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "grafana-amazonprometheus-datasource",
+        "uid": "dfv2tj74hivb4d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 50,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "stepAfter",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Failed"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F2495C",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "custom.transform",
+                "value": "negative-Y"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 23
+      },
+      "id": 36,
+      "options": {
+        "alertThreshold": false,
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "dfv2tj74hivb4d"
+          },
+          "editorMode": "code",
+          "expr": "sum by (status) (awx_status_total)",
+          "instant": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Job Execution",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 31
+      },
+      "id": 49,
+      "panels": [],
+      "title": "Database",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "cloudwatch",
+        "uid": "cftekmikkd8g0e"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ReadIOPS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "iops"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "mode": "palette-classic"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ReadThroughput"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "Bps"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ReadLatency Average"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "s"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ReadLatency Maximum"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "s"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 32
+      },
+      "id": 38,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "ReadIOPS",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "A",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "ReadThroughput",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "B",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "ReadLatency",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "C",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "ReadLatency",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "D",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Maximum"
+        }
+      ],
+      "title": "Database - Reads",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "cloudwatch",
+        "uid": "cftekmikkd8g0e"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 50,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 41
+      },
+      "id": 40,
+      "options": {
+        "alertThreshold": false,
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "CPUUtilization",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "A",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Maximum"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "DiskQueueDepth",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "B",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Minimum"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "xxxxx
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "DBLoad",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "C",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Maximum"
+        }
+      ],
+      "title": "Database - Common",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "cloudwatch",
+        "uid": "cftekmikkd8g0e"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 50,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "normal"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 3,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "WriteIOPS"
+            },
+            "properties": [
+              {
+                "id": "custom.lineWidth",
+                "value": 0
+              },
+              {
+                "id": "unit",
+                "value": "iops"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "WriteThroughput"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "Bps"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "WriteLatency"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "s"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "DiskQueueDepth"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 49
+      },
+      "id": 42,
+      "options": {
+        "alertThreshold": false,
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.4.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "xxxxxx"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "WriteIOPS",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "A",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "xxxx"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "WriteThroughput",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "B",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "xxxxx"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "WriteLatency",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "C",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Average"
+        },
+        {
+          "datasource": {
+            "type": "cloudwatch",
+            "uid": "cftekmikkd8g0e"
+          },
+          "dimensions": {
+            "DBInstanceIdentifier": "RDS_NAME"
+          },
+          "expression": "",
+          "id": "",
+          "label": "",
+          "logGroups": [
+            {
+              "accountId": "ACCOUNT_ID",
+              "arn": "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/ecs/LOG_GROUP:*",
+              "name": "NAME"
+            }
+          ],
+          "matchExact": true,
+          "metricEditorMode": 0,
+          "metricName": "DiskQueueDepth",
+          "metricQueryType": 0,
+          "namespace": "AWS/RDS",
+          "period": "",
+          "queryLanguage": "CWLI",
+          "queryMode": "Metrics",
+          "refId": "D",
+          "region": "default",
+          "sqlExpression": "",
+          "statistic": "Maximum"
+        }
+      ],
+      "title": "Database - Writes",
+      "type": "timeseries"
+    }
+  ],
+  "preload": false,
+  "refresh": "5s",
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "text": "",
+          "value": ""
+        },
+        "datasource": {
+          "type": "prometheus"
+        },
+        "definition": "label_values(awx_instance_info,namespace)",
+        "description": "",
+        "includeAll": false,
+        "label": "Namespace",
+        "name": "namespace",
+        "options": [],
+        "query": {
+          "query": "label_values(awx_instance_info,namespace)",
+          "refId": "StandardVariableQuery"
+        },
+        "refresh": 1,
+        "regex": "",
+        "regexApplyTo": "value",
+        "type": "query"
+      },
+      {
+        "current": {
+          "text": "",
+          "value": ""
+        },
+        "datasource": {
+          "type": "prometheus"
+        },
+        "definition": "query_result(awx_instance_info{namespace=~\"$namespace\"})",
+        "description": "Service",
+        "includeAll": false,
+        "label": "Service",
+        "name": "service",
+        "options": [],
+        "query": {
+          "query": "query_result(awx_instance_info{namespace=~\"$namespace\"})",
+          "refId": "StandardVariableQuery"
+        },
+        "refresh": 1,
+        "regex": "/service=\"([^\"]+)\"/",
+        "regexApplyTo": "value",
+        "type": "query"
+      },
+      {
+        "current": {
+          "text": "",
+          "value": ""
+        },
+        "datasource": {
+          "type": "prometheus"
+        },
+        "definition": "query_result(awx_instance_info{namespace=~\"$namespace\",job=~\"$service\"})",
+        "hide": 2,
+        "includeAll": false,
+        "label": "Pod",
+        "name": "pod",
+        "options": [],
+        "query": {
+          "query": "query_result(awx_instance_info{namespace=~\"$namespace\",job=~\"$service\"})",
+          "refId": "StandardVariableQuery"
+        },
+        "refresh": 1,
+        "regex": "/pod=\"([^\"]+)\"/",
+        "regexApplyTo": "value",
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-30m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "AAP - Metrics v3",
+  "uid": "benrvvl",
+  "version": 43,
+  "weekStart": ""
+}
